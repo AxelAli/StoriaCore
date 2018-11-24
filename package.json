@@ -1,0 +1,42 @@
+{
+  "name": "storiacore",
+  "version": "1.0.0",
+  "description": "Core scene components for Storia Engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prettier": "prettier --single-quote --trailing-comma all --write '{src,__{tests,mocks}__}/**/*.js'",
+    "lint": "eslint --cache src",
+    "lint:fix": "eslint --cache --fix src",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelAli/StoriaCore.git"
+  },
+  "keywords": [
+    "js",
+    "storia",
+    "engine"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "yarn prettier",
+      "git add"
+    ]
+  },
+  "author": "Axel Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxelAli/StoriaCore/issues"
+  },
+  "homepage": "https://github.com/AxelAli/StoriaCore#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-synacor": "^2.0.2",
+    "git-pre-commit": "^2.1.4",
+    "prettier": "^1.15.2",
+    "react-test-renderer": "^16.6.3"
+  }
+}
