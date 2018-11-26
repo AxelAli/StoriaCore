@@ -31,7 +31,8 @@
     "url": "https://github.com/AxelAli/StoriaCore/issues"
   },
   "homepage": "https://github.com/AxelAli/StoriaCore#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react-typing-animation": "^1.4.0"},
   "devDependencies": {
     "eslint": "^5.9.0",
     "eslint-config-synacor": "^2.0.2",

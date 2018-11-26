@@ -1,18 +1,18 @@
 export const Background = (props, callback) => {
   const { url, style, type, element } = props;
   switch (type) {
-    case 'image':
+    case "image":
       return (
         <div
           style={{
             ...defaultStyles.image,
             ...style,
-            backgroundImage: `url(${url})`,
+            backgroundImage: `url(${url})`
           }}
         />
       );
 
-    case 'video':
+    case "video":
       return (
         <video
           autoPlay
@@ -23,7 +23,7 @@ export const Background = (props, callback) => {
         </video>
       );
 
-    case 'element':
+    case "element":
       return element;
 
     default:
@@ -33,20 +33,20 @@ export const Background = (props, callback) => {
 
 const defaultStyles = {
   image: {
-    position: 'absolute',
-    height: '100%',
-    width: '100%',
-    backgroundSize: 'cover',
-    overflow: 'hidden',
-    backgroundPosition: 'center center',
+    position: "absolute",
+    height: "100%",
+    width: "100%",
+    backgroundSize: "cover",
+    overflow: "hidden",
+    backgroundPosition: "center center"
   },
   video: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    minWidth: '100%',
-    minHeight: '100%',
-    overflow: 'hidden',
-  },
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    minWidth: "100%",
+    minHeight: "100%",
+    overflow: "hidden"
+  }
 };

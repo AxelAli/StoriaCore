@@ -1,4 +1,4 @@
-import  {Scene} from "./src/Scene";
+import  {Scene} from "./src/Composition/Scene";
 
 export default (SceneRenderer = (
   backgroundDataArray,

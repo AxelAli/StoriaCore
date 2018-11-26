@@ -1,5 +1,5 @@
 export const Character = props => {
-  const { url, style, element, type, invertX, height, position } = props;
+  const { url, style, element, type, invertX, height, position } = {...defaultStyles,...props};
   switch (type) {
     case 'image':
       return (
@@ -14,8 +14,8 @@ export const Character = props => {
             style={{
               ...style,
               ...defaultStyles.image,
-              top: 100 - height + '%',
-              height: height + '%',
+              top: height ? 100 - height + '%':0,
+              height: height? height + '%':'100%',
             }}
             src={url}
           />
